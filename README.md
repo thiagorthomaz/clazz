@@ -1,6 +1,6 @@
 # Clazz
 
-For do repositório de código usado pelo Prof. Leandro Cruz para ministrar o curso de pós-graduação
+Fork do repositório de código usado pelo Prof. Leandro Cruz para ministrar o curso de pós-graduação
 
 ## Git
 
