@@ -1,6 +1,6 @@
 # Clazz
 
-Repositório de código para as aulas que ministro nos cursos de pós-graduação em algumas universidades
+For do repositório de código usado pelo Prof. Leandro Cruz para ministrar o curso de pós-graduação
 
 ## Git
 
