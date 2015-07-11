@@ -1,10 +1,14 @@
 package sn.server.command;
 
-import org.apache.commons.lang3.RandomStringUtils;
+import sn.session.SessionManager;
+import xingu.container.Inject;
 
 public class Auth
 	implements Command
 {
+	@Inject
+	private SessionManager session;
+
 	private String username;
 	
 	private String password;
@@ -16,7 +20,7 @@ public class Auth
 		boolean valid = "zzz".equals(username) && "zzz".equals(password);
 		if(valid)
 		{
-			String token = RandomStringUtils.randomAlphanumeric(32);
+			String token = session.newSessionFor(1);
 			return new AuthReply(token);
 		}
 		return new AuthReply(null);

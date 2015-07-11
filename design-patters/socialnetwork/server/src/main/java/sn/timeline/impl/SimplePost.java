@@ -7,7 +7,6 @@ import sn.timeline.Post;
 public class SimplePost
 	implements Post
 {
-
 	private long	userId;
 
 	private Date	date;
