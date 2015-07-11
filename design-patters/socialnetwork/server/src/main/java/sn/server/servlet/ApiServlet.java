@@ -24,7 +24,7 @@ public class ApiServlet
 	{
 		/*
 		 * TODO: Trabalho
-		 * 
+		 * Chain of responsability
 		 * Implementar as seguintes operaçoes com Chain of Responsability
 		 * 1. Verificar se o comando pode ser executado
 		 * 2. Logar a execucao do comando
