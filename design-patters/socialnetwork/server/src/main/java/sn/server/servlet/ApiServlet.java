@@ -17,6 +17,7 @@ public class ApiServlet
 	protected Object process(HttpServletRequest request, HttpServletResponse response)
 		throws Exception
 	{
+		//Se token ok...
 		Command command = mapper.translate(request);
 		return command.execute();
 	}
