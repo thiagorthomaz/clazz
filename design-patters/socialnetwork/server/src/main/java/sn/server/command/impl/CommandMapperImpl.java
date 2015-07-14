@@ -24,8 +24,6 @@ public class CommandMapperImpl
 {
 	@Inject
 	private Factory factory;
-
-	private Logger logger = LoggerFactory.getLogger(getClass());
 	
 	private Map<String, Command> commandByPath = new HashMap<>();
 
@@ -43,7 +41,7 @@ public class CommandMapperImpl
 		throws Exception
 	{
 		String path = request.getPathInfo();
-		logger.info("Mapping command to: '{}'", path);
+		
 
 		Command cmd = commandByPath.get(path);
 		if(cmd != null)

@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import sn.server.command.Command;
 import sn.server.command.CommandMapper;
+import sn.server.command.UnknownCommand;
 import xingu.container.Inject;
 
 public class ProcessCommand implements RequestChain {

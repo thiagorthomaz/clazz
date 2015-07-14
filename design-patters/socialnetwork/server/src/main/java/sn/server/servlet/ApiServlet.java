@@ -18,7 +18,7 @@ public class ApiServlet
 {
 	@Inject
 	private RequestChain chain;
-	
+
 	@Override
 	protected Object process(HttpServletRequest request, HttpServletResponse response)
 		throws Exception
@@ -29,9 +29,10 @@ public class ApiServlet
 		 * TODO: Trabalho
 		 * Chain of responsability
 		 * Implementar as seguintes operaçoes com Chain of Responsability
-		 * 1. Verificar se o comando pode ser executado
-		 * 2. Logar a execucao do comando
-		 * 3. Verificar a presença de SQL Injection nos parametros antes da execucao do commando
+		 * 1. Verifica autenticação no sistema - ok
+		 * 2. Verificar se o comando pode ser executado -ok
+		 * 3. Logar a execucao do comando - ok
+		 * 4. Verificar a presença de SQL Injection nos parametros antes da execucao do commando
 		 *
 		 */
 
