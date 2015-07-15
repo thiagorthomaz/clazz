@@ -32,7 +32,7 @@ public class ApiServlet
 		 * 1. Verifica autenticação no sistema - ok
 		 * 2. Verificar se o comando pode ser executado -ok
 		 * 3. Logar a execucao do comando - ok
-		 * 4. Verificar a presença de SQL Injection nos parametros antes da execucao do commando
+		 * 4. Verificar a presença de SQL Injection nos parametros antes da execucao do commando - ok
 		 *
 		 */
 

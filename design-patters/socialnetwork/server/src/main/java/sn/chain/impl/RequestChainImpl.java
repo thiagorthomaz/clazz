@@ -11,6 +11,7 @@ import sn.chain.CheckAuth;
 import sn.chain.LogCommand;
 import sn.chain.ProcessCommand;
 import sn.chain.RequestChain;
+import sn.chain.RequestCommand;
 import xingu.container.Inject;
 import xingu.factory.Factory;
 
@@ -24,6 +25,7 @@ public class RequestChainImpl  implements RequestChain, Initializable {
 	@Override
 	public void initialize() throws Exception {
 		nodes.add(factory.create(LogCommand.class));
+		nodes.add(factory.create(RequestCommand.class));
 		nodes.add(factory.create(CheckAuth.class));
 		nodes.add(factory.create(ProcessCommand.class));
 	}
